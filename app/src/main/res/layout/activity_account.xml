@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back_foot"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_corner"
+        app:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/items_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/items" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/linar">
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="133dp"-->
+<!--            android:layout_height="28dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="133dp"-->
+<!--            android:layout_marginTop="87dp"-->
+
+<!--            android:layout_marginEnd="135dp"-->
+<!--            android:layout_marginBottom="75dp"-->
+<!--            android:text="Your account" />-->
+
+
+        <TextView
+            android:id="@+id/verify"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:gravity="center"
+
+            android:text="Please Verify Your Email Adress"
+            android:textColor="@color/black"
+            android:visibility="invisible"
+            tools:text="Please Verify Your Email Adress" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/verifyemail"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="110dp"
+        android:background="@drawable/button"
+        android:text="Verify"
+        android:visibility="invisible" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/emailV"
+
+            android:layout_width="247dp"
+
+            android:layout_height="46dp"
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.693" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="411dp"
+            android:layout_height="139dp"
+            android:src="@drawable/userprofule"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="392dp"
+            android:drawableLeft="@drawable/id"
+            android:padding="10dp"
+
+
+            android:text="CIN : "
+            android:textColor="@color/darkblue"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/cinV"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="318dp"
+            android:layout_marginBottom="394dp"
+            android:padding="10dp"
+            android:text="TextView"
+
+
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.723"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.913" />
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="340dp"
+            android:drawableLeft="@drawable/name"
+            android:padding="10dp"
+
+
+            android:text="Full Name : "
+            android:textColor="@color/darkblue"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/nameV"
+            android:layout_width="186dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="24dp"
+
+
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="187dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="276dp"
+            android:drawableLeft="@drawable/phone"
+
+
+            android:padding="10dp"
+            android:text="Phone Number : "
+            android:textColor="@color/darkblue"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/phoneV"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="280dp"
+
+
+            android:padding="10dp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.837"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="220dp"
+
+            android:drawableLeft="@drawable/email"
+
+
+            android:padding="10dp"
+            android:text="Email : "
+            android:textColor="@color/darkblue"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="164dp"
+            android:drawableLeft="@drawable/add"
+
+
+            android:padding="10dp"
+            android:text="Address : "
+
+            android:textColor="@color/darkblue"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/addV"
+            android:layout_width="143dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginBottom="168dp"
+            android:padding="10dp"
+            android:text="TextView"
+
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="142dp"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+
+            android:layout_marginStart="112dp"
+            android:layout_marginBottom="96dp"
+            android:background="@drawable/rounded"
+            android:text="LogOut"
+            android:textColor="@color/darkblue"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+

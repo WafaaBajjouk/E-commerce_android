@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_foot"
+    android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="90dp"
+            android:src="@drawable/background_picture" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.03"
+            android:text="SignUp"
+            android:textColor="#0d6e6a"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cin"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forget"
+            android:drawableRight="@drawable/id"
+            android:hint="CIN"
+            android:paddingLeft="20dp"
+            android:textColor="#0d6e6a"
+
+            android:textColorHint="#FF0D6E6A"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forget"
+            android:drawableRight="@drawable/name"
+            android:hint="Full Name"
+            android:paddingLeft="20dp"
+            android:textColor="#0d6e6a"
+
+            android:textColorHint="#FF0D6E6A"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forget"
+            android:drawableRight="@drawable/email"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:textColor="#0d6e6a"
+
+            android:textColorHint="#FF0D6E6A"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:hint="Phone Number"
+            android:drawableRight="@drawable/phone"
+
+            android:textColorHint="#FF0D6E6A"            android:textColor="#0d6e6a"
+            android:textStyle="bold"
+
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"/>
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forget"
+            android:drawableRight="@drawable/add"
+            android:hint="Address"
+            android:paddingLeft="20dp"
+            android:textColor="#0d6e6a"
+
+            android:textColorHint="#FF0D6E6A"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:inputType="textPassword"
+            android:textColor="#0d6e6a"
+            android:drawableRight="@drawable/lock"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:hint="Password"
+            android:textColorHint="#FF0D6E6A"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/confi"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forget"
+            android:textColor="#0d6e6a"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/lock"
+            android:hint="Confirm Password"
+            android:textColorHint="#FF0D6E6A"
+            android:inputType="textPassword"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button"
+            android:text="Register"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/gotologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Already have an account? Sign In"
+            android:textColor="#252566"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+</LinearLayout>
