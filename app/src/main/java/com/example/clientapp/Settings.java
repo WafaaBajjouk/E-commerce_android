@@ -74,12 +74,12 @@ public class Settings extends AppCompatActivity {
         });
 
         to = findViewById(R.id.et_to);
-        to.setText("fastbill.este@gmail.com");
+        to.setText("fastbill@gmail.com");
         subject = findViewById(R.id.et_subject);
         msg = findViewById(R.id.et_message);
         //sender email credential
-        sEmail = "fastbill.este@gmail.com";
-        sPassword = "1234este";
+        sEmail = "fastbill@gmail.com";
+        sPassword = "1234";
         
 
         send = findViewById(R.id.bt_send);
